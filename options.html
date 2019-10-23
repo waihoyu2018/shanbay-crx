@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Settings</title>
+    <link href="css/options.css" type="text/css" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body class="options">
+<div id="wrapper">
+    <div id="header"><h1>扇贝助手设置</h1></div>
+    <div id="options">
+        <fieldset>
+            <legend>快捷键</legend>
+            <div class="shortcut">
+                <div>
+                    请参考扇贝助手增强版的<a href="http://josephjctang.com/shanbay-crx/#shortcuts"><b>Shortcuts</b></a> 部分
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>功能设置</legend>
+            <div id="shortcuts_table">
+                <div id="menu_shortcuts">
+
+                    <div>
+                        <div> 词根来源 :</div>
+                        <div class="td">
+                            <label>
+                                <input name="etym" type="radio" value="etym" checked="checked">Etymology
+                                Online
+                            </label>
+                            <label>
+                                <input name="etym" type="radio" value='webster'>Webster Dictionary
+                            </label>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div> 隐藏页面内容:</div>
+                        <div class="td">
+                            <label>
+                                <input type="checkbox" name="hider" value="roots">
+                            </label> 词根
+                            <label>
+                                <input type="checkbox" name="hider" value="affix">
+                            </label> 词汇派生
+                            <label>
+                                <input type="checkbox" name="hider" value="learning-examples-box">
+                                例句
+                            </label>
+                            <label>
+                                <input type="checkbox" name="hider" value="notes-box">
+                                笔记
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="option-set">打开"双击单词查义"
+                            <label>
+                                <input name="click2s" type="radio" value="yes" checked="checked">
+                            </label>是
+                            <label>
+                                <input name="click2s" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <div class="option-set">查词时默认加入生词库
+                            <label>
+                                <input name="forget_word" type="radio" value="yes" checked="checked">
+                            </label>是
+                            <label>
+                                <input name="forget_word" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <div class="option-set">查词时默认发音
+                            <label>
+                                <input name="pronounce_word" type="radio" value="uk">
+                            </label>英音
+                            <label>
+                                <input name="pronounce_word" type="radio" value="us">
+                            </label>美音
+                            <label>
+                                <input name="pronounce_word" type="radio" value='' checked="checked">
+                            </label>否
+                        </div>
+                        <div class="option-set">打开"单词变形"
+                            <label>
+                                <input name="exchanges" type="radio" value="yes" checked="checked">
+                            </label>是
+                            <label>
+                                <input name="exchanges" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <div class="option-set">打开"常用短语"
+                            <label>
+                                <input name="phrases" type="radio" value="yes" checked="checked">
+                            </label>是
+                            <label>
+                                <input name="phrases" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <div class="option-set">默认显示音节划分
+                            <label>
+                                <input name="show_syllabe" type="radio" value="yes"
+                                       checked="checked">
+                            </label>是
+                            <label>
+                                <input name="show_syllabe" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <!-- 开发者可把后面两项打开自动记录词根和派生 -->
+                        <!--<div class="option-set">默认将词根记入笔记
+                                                  <label>
+                                                       <input name="root2note" type="radio" value="YES" checked="checked">
+                                                   </label>是
+                            <label>
+                                <input name="root2note" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <div class="option-set">默认将派生记入笔记
+                                                   <label>
+                                                        <input name="afx2note" type="radio" value="YES" checked="checked">
+                                                    </label>是
+                            <label>
+                                <input name="afx2note" type="radio" value='no'>
+                            </label>否
+                        </div>-->
+                        <div class="option-set">默认隐藏中文释义
+                            <label>
+                                <input name="hide_cn" type="radio" value="yes">
+                            </label>是
+                            <label>
+                                <input name="hide_cn" type="radio" value='no' checked="checked">
+                            </label>否
+                        </div>
+                        <div class="option-set">默认开启小窗定时提醒
+                            <label>
+                                <input name="not_pop" type="radio" value="yes" checked="checked">
+                            </label>是
+                            <label>
+                                <input name="not_pop" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <div class="option-set">小窗提醒内容
+                            <label>
+                                <input name="pop_msg" type="text" value="少壮不努力，老大背单词！" maxlength="80" style="width: 70%">
+                            </label>
+                        </div>
+                        <div class="option-set">我的词库翻页时默认过滤掉“太简单”单词
+                            <label>
+                                <input name="skip_easy" type="radio" value="yes">
+                            </label>是
+                            <label>
+                                <input name="skip_easy" type="radio" value='no' checked="checked">
+                            </label>否
+                        </div>
+                        <div class="option-set">默认打开“选中右键查词”功能(重启Chrome方可生效)
+                            <label>
+                                <input name="ctx_menu" type="radio" value="yes" checked="checked">
+                            </label>是
+                            <label>
+                                <input name="ctx_menu" type="radio" value='no'>
+                            </label>否
+                        </div>
+                        <div class="option-set">查词 popup 多少秒后自动关闭
+                            <label>
+                                <input name="close_wait" type="text" value="30">
+                            </label>
+                        </div>
+                        <div class="option-set" id="webster_set">
+                            第三方词典使用(展示派生、英文释义需选择)
+                            <label>
+                                <input name="dict" type="radio" value="webster">Webster Collegiate
+                            </label>
+                            <!-- <label>
+                                 <input name="dict" type="radio" value="oxford">Oxford Advanced
+                             </label>-->
+                            <label>
+                                <input name="dict" type="radio" value='no' checked="checked">不使用
+                            </label>
+
+                        </div>
+                        <div class="option-set">默认使用Webster英文释义（派生需要打开此项）
+                            <label>
+                                <input name="web_en" type="radio" value="yes">
+                            </label>是
+                            <label>
+                                <input name="web_en" type="radio" value='no' checked="checked">
+                            </label>否
+                        </div>
+                        <div class="option-set" id="reg_key">
+                            <span  style="vertical-align: top">
+                                Webster Key:
+                            </span> <a style="vertical-align: middle" href="javascript:void(0);" id="test">测试</a>
+                            <br/>
+
+                            <label>
+                                <textarea name="web_key" cols="40" rows="3"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <p>Webster Key最好自己按照<a
+                                    href="http://josephjctang.com/shanbay-crx/#webster-app-key-注册"
+                                    target="_blank">Webster App Key 注册教程</a>注册并将Key 存于此处上述方框内。<br/>
+                                每行一个key。不能使用的key将被自动删除。可点击右方“测试”删除不可用keys。<br/>
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>关于Keys 贡献的说明</legend>
+            <div style="text-align: left">
+                <p> 在此非常感谢之前几个用户贡献的Keys。<br/>
+                    一个key已经足够一人使用，若想把多余的keys贡献给大家使用，可email <a href="javascript:void(0);" id="mail_me">我</a>。<br/>
+                    若不申请新key，默认就共用大家分享的keys。但现在已经达到限额的80%了。如不能正常使用Webster的功能，要么就是当日达使用上限，要么就是设置中关掉了相关Webster的部分，请检查。
+                    我之前申请的keys就因为使用量过大而被Webster勒令不能再用了，现在的共用keys 不知道能用多久，如果有童鞋愿意奉献，我再收集7、8个key就完全够当前全部用户使用了。</p>
+            </div>
+        </fieldset>
+
+
+        <div id="tip">
+            <span></span>
+        </div>
+    </div>
+    <div id="action_panel">
+        <div id="status"></div>
+        <input type="button" id="save" value="保存"/>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/options.js" charset="UTF-8"></script>
+</html>
