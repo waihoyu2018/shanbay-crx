@@ -1,8 +1,8 @@
 {
-  "name": "扇贝助手增强版",
+  "name": "扇贝助手增强版1",
   "version": "1.14",
   "manifest_version": 2,
-  "description": "任意网页查询并加入生词本、背单词页面简洁、增强词根词缀Webster功能、增加实用快捷键",
+  "description": "1任意网页查询并加入生词本、背单词页面简洁、增强词根词缀Webster功能、增加实用快捷键",
   "icons": {
     "48": "icon_48.png",
     "72": "icon_72.png",
@@ -21,7 +21,7 @@
   "browser_action": {
     "default_icon": "icon_48.png",
     "default_popup": "popup.html",
-    "default_title": "扇贝助手增强版"
+    "default_title": "扇贝助手增强版1"
   },
   "content_scripts": [
     {
